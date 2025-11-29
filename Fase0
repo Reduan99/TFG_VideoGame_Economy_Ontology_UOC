@@ -1,0 +1,237 @@
+Web Semàntica
+Ontologia de les microtransaccions in-game com a model semàntic de valor, tipus i impacte econòmic en videojocs digitals.
+
+FASE 0
+
+   Objectiu central i pregunta de recerca
+Definició inicial del projecte
+Explorar el paper de les microtransaccions dins del mercat dels videojocs digitals, analitzant com influeixen en la percepció de valor, el comportament del jugador i l’evolució del model econòmic del sector.
+
+L’objectiu és crear una ontologia que permeti representar i analitzar les relacions entre videojocs, tipus de microtransaccions, monedes virtuals, empreses desenvolupadores i patrons de consum.
+Figura 1: Imatge de portada videojoc Griss
+
+
+Abast i límits del domini
+L’ontologia se centrarà en videojocs que incorporin algun tipus de microtransacció documentada.
+Els jocs que no disposin de microtransaccions s’inclouran també, com a grup de control dins del domini, per facilitar la comparació entre models econòmics.
+Jocs digitals
+Jocs de desenvolupadors independents
+Jocs de plataformes obertes
+Jocs mòbils
+Jocs sense microtransaccions ordinador
+Jocs sense microtransaccions mòbils
+03.	Fonts de dades previstes
+Conjunt de datasets oberts i verificats provinents de plataformes acadèmiques i repositoris de dades públiques
+Tipus
+Nom
+Plataforma
+Propòsit
+URL
+Catàlegs de jocs digitals
+GOG Games Dataset
+Kaggle
+Definir les entitats Joc i Empresa, incloent dades de preu, valoracions, plataforma i data de llançament.
+https://www.kaggle.com/datasets/lunthu/gog-com-video-games-dataset?
+Microtransaccions reals
+Mobile Game In-App Purchases
+Kaggle
+Modelar Microtransacció, Usuari, MonedaVirtual i ValorEconòmic. Inclou informació d’usuaris, imports i tipus de compra.
+https://www.kaggle.com/datasets/pratyushpuri/mobile-game-in-app-purchases-dataset-2025?
+Economies virtuals estructurades
+Mobile/PC/Social Games Virtual Goods & Currencies
+Figshare
+Modelar Microtransacció, Usuari, MonedaVirtual i ValorEconòmic. Inclou informació d’usuaris, imports i tipus de compra.
+https://figshare.com/articles/dataset/Virtual_Goods_and_Currencies_Open_Data_Set/4231727?
+Comportament dels jugadors
+Online Gaming Insights
+GitHub/Kaggle
+Descriure patrons de despesa i ús per classe Usuari i Comportament.
+
+
+Economia Freemium i màrqueting
+Marketing Freemium Game Data – ad_spend
+Kaggle
+Modelar la dimensió publicitària i d’adquisició d’usuaris, vinculant Empresa, Campanya i Conversió.
+https://www.kaggle.com/code/nancyangel/marketing-kpis-in-mobile-games?
+
+
+
+Total: 39 datasets (5 pre-seleccionats)
+
+Cleaned Data 2.csv
+
+
+computer_games.csv
+
+
+Games_data.csv
+
+
+gaming_industry_trends (1).csv
+
+
+gaming_industry_trends.csv
+
+
+gaming_stats.csv
+
+
+gog_games_dataset.csv
+
+
+Marketing Freemium Game Data - ad_spend.csv
+
+
+mobile_game_inapp_purchases.csv
+
+
+nintendo_games.csv
+
+
+online_gaming_insights.csv
+
+
+player_behaviour_data.csv
+
+
+preprocessed_video_games.csv
+
+
+purchase_data.csv
+
+
+Steam_2024_bestRevenue_1500.csv
+
+
+t0001-10.1080_14459795.2024.2390827.csv
+
+
+t0002-10.1080_14459795.2024.2390827.csv
+
+
+Train.csv
+
+
+TTWO.csv
+
+
+vgsales (1).csv
+
+
+Video Games Sales.csv
+
+
+Table 4.xls
+
+
+raw.githubusercontent.com..._online_gaming_behavior_dataset.csv.pdf
+
+
+Steam Dataset Markdown.Rmd
+
+
+Questionnaire Data.xlsx
+
+
+appstore_games.csv
+
+
+online_gaming_behavior_dataset.csv
+
+
+Steam Games 2024.csv
+
+
+steam_games.csv
+
+
+steam-200k.csv
+
+
+steam-games.csv
+
+
+video_games.csv
+
+
+Video_Games.csv
+
+
+PC Games Virtual Goods & Currencies Data.xlsx
+
+
+Social Games Virtual Goods & Currencies Data.xlsx
+
+
+Mobile Games Virtual Goods & Currencies Data.xlsx
+
+
+windows_store.csv
+
+
+(encara processant alguns .xlsx interns)
+
+
+(PDF i RMD de suport, no datasets purs)
+
+URL’s cercades:
+https://figshare.com/articles/dataset/Virtual_Goods_and_Currencies_Open_Data_Set/4231727?file=6901607 
+https://figshare.com/articles/dataset/Data_for_a_static_surge_pricing_model_for_slot-based_on_demand_services_/28660400 
+https://figshare.com/articles/dataset/Statistics_of_in-game_trade_activities_at_the_country_level_/13123777?file=25187761 
+https://raw.githubusercontent.com/AchmadIfal26/Gaming-Behavior/refs/heads/main/Gaming%20Fix.csv 
+https://raw.githubusercontent.com/AchmadIfal26/Gaming-Behavior/refs/heads/main/online_gaming_behavior_dataset.csv 
+https://github.com/Sharvari289/Game-Industry-Analysis/blob/main/Train.csv
+https://github.com/m36418o/videogame-purchase-analysis/blob/main/HeroesOfPymoli/Resources/purchase_data.csv 
+https://www.kaggle.com/datasets/haseebindata/gaming-industry-trends-1000-rows 
+https://www.kaggle.com/datasets/praffulsingh009/steam-video-games-2024 
+https://www.kaggle.com/datasets/pedroaltobelli/nintendo-switch-games 
+https://www.kaggle.com/datasets/mohdsukry0000/gaming-dataset 
+https://www.kaggle.com/datasets/quadeer15sh/windows-store-top-apps-games 
+https://www.kaggle.com/datasets/tamber/steam-video-games/data 
+https://growthmarketreports.com/report/video-games-market-global-industry-analysis 
+https://www.kaggle.com/datasets/pratyushpuri/mobile-game-in-app-purchases-dataset-2025 
+https://www.kaggle.com/datasets/iamsouravbanerjee/computer-games-dataset 
+https://github.com/leomaurodesenv/game-datasets?tab=readme-ov-file#dataset 
+https://figshare.com/articles/dataset/Video_Games_dataset_for_multimedia_features/27569481 
+https://www.kaggle.com/datasets/lunthu/gog-com-video-games-dataset 
+https://www.kaggle.com/datasets/rautaishwarya/player 
+https://www.kaggle.com/datasets/wasiqaliyasir/online-gaming-behavior-dataset 
+https://www.kaggle.com/datasets/rabieelkharoua/predict-online-gaming-behavior-dataset 
+https://www.kaggle.com/datasets/kevinhuynh207/steam-dataset-analysis 
+https://www.kaggle.com/datasets/pypiahmad/steam-video-game-and-bundle-data 
+https://www.kaggle.com/datasets/modiash/video-game-sales-and-performance-data 
+https://www.kaggle.com/datasets/juliusfletcher/free-to-play-games-dataset 
+https://www.kaggle.com/datasets/sheemazain/video-game-sales-by-sheema-zain 
+https://www.kaggle.com/datasets/haseebindata/gaming-industry-trends-1000-rows 
+https://www.kaggle.com/datasets/maso0dahmed/video-games-data 
+https://www.datacamp.com/datalab/datasets/dataset-r-video-games-sales 
+https://gomask.ai/marketplace/datasets/gaming-in-game-purchase-records 
+https://gomask.ai/marketplace/datasets/in-game-purchase-transaction-logs 
+https://gomask.ai/marketplace/datasets/gaming-session-retention-trends 
+https://dataintelo.com/report/loot-box-market 
+https://data.mendeley.com/datasets/wsnp3783ty/1 
+https://www.kaggle.com/datasets/nancyangel/marketing-freemiun-game-data 
+https://www.kaggle.com/datasets/varpit94/taketwo-interactive-stock-data 
+https://www.kaggle.com/datasets/pratyushpuri/mobile-game-in-app-purchases-dataset-2025 
+https://www.kaggle.com/datasets/tristan581/all-55000-games-on-steam-november-2022 
+https://www.kaggle.com/datasets/amanbarthwal/steam-store-data 
+https://www.kaggle.com/datasets/artyomkruglov/gaming-profiles-2025-steam-playstation-xbox 
+https://www.kaggle.com/datasets/thedevastator/global-video-game-sales-ratings 
+https://www.kaggle.com/datasets/thedevastator/video-game-sales-and-ratings 
+https://www.kaggle.com/datasets/thedevastator/global-video-game-sales-and-reviews 
+https://www.kaggle.com/datasets/alicemtopcu/top-1500-games-on-steam-by-revenue-09-09-2024 
+https://www.kaggle.com/datasets/anandshaw2001/video-game-sales 
+https://www.kaggle.com/datasets/tristan581/17k-apple-app-store-strategy-games 
+https://www.kaggle.com/datasets/ulrikthygepedersen/path-of-exi00000le-currency-economy-of-an-online-game
+
+04.	Estructura conceptual inicial (esbós de l’ontologia)
+L’ontologia proposada pretén representar les relacions econòmiques, socials i de valor que es produeixen dins dels videojocs digitals mitjançant microtransaccions i economies virtuals.
+
+Usuari realitza → Microtransacció
+Microtransacció utilitza → MonedaVirtual
+Microtransacció adquireix → ObjecteVirtual
+ObjecteVirtual pertany a → Joc
+Joc és desenvolupat per → Empresa
+Microtransacció té valor → ValorEconòmic
+Campanya promou → Joc
+Comportament descriu → Usuari
