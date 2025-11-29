@@ -1,1 +1,21 @@
+Metodologia del projecte (PAC2)
 
+Aquest projecte té una combinació de metodologies, Methontology i NeOn, amb l'objectiu de garantir una conceptualització rigorosa del domini i, al mateix moment, mantenir un enfocament modular i extensible.
+
+Methontology es una metodologia que té un esquema de treball dividit en seqüències de manera rigurosa fet que facilita la definició progressiva d’un projecte. Dins de les seves fases, ens trobem amb l’especifiació, la conceptualització, la formalització la implementació i el manteniment adequat, tot això de manera documentada. S’ha escollit aquesta metodologia pel fet que ens trobem amb un treball que combina diversos aspectes (econòmics, fenomenològics o semàntics dels videojocs) per tant al no estar formalitzat prèviament, aquesta estructura ens ajuda en gran mesura.
+
+
+NeON, es una metodología amb un criteri enfocat a la reutilització i ampliació d’ontologies existents. Aporta un procés d’analisi de compatibilitat entre models. També permet identificar solapaments conceptuals i establir relacions semàntiques o afegir elements controlats.
+
+
+Estat actual (PAC2)
+
+Objectius definits
+
+Preguntes de competència establertes
+
+Model conceptual preliminar complet
+
+Planificació i riscos identificats
+
+Sense formalització OWL (es realitzarà a PAC3)
