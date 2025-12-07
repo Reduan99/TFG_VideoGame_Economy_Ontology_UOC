@@ -1,0 +1,530 @@
+@prefix : <http://www.semanticweb.org/edu_a/ontologies/2025/11/untitled-ontology-3/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/edu_a/ontologies/2025/11/untitled-ontology-3/> .
+
+<https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#appliesInCountry
+:appliesInCountry rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RegulationRule ;
+                  rdfs:range :Country .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#grantsAsset
+:grantsAsset rdf:type owl:ObjectProperty ;
+             rdfs:domain :Transaction ;
+             rdfs:range :DigitalAsset .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#hasAgeRating
+:hasAgeRating rdf:type owl:ObjectProperty ;
+              rdfs:domain :VideoGame ;
+              rdfs:range :AgeRating .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#hasRiskIndicator
+:hasRiskIndicator rdf:type owl:ObjectProperty ;
+                  rdfs:domain :MonetizationMechanic ;
+                  rdfs:range :RiskIndicator .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#hasSeason
+:hasSeason rdf:type owl:ObjectProperty ;
+           rdfs:domain :VideoGame ;
+           rdfs:range :Season .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#inGame
+:inGame rdf:type owl:ObjectProperty ;
+        rdfs:domain :Transaction ;
+        rdfs:range :VideoGame .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#listedInStore
+:listedInStore rdf:type owl:ObjectProperty ;
+               rdfs:domain :VideoGame ;
+               rdfs:range :StoreFront .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#occursDuring
+:occursDuring rdf:type owl:ObjectProperty ;
+              rdfs:domain :MonetizationMechanic ;
+              rdfs:range :OfferPeriod .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#occursInSeason
+:occursInSeason rdf:type owl:ObjectProperty ;
+                rdfs:domain :MonetizationMechanic ;
+                rdfs:range :Season .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#offersMechanic
+:offersMechanic rdf:type owl:ObjectProperty ;
+                rdfs:domain :VideoGame ;
+                rdfs:range :MonetizationMechanic .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#performedBy
+:performedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Transaction ;
+             rdfs:range :PlayerAccount .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#profileOf
+:profileOf rdf:type owl:ObjectProperty ;
+           rdfs:domain :PlayerProfile ;
+           rdfs:range :Player .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#regulatedBy
+:regulatedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :MonetizationMechanic ;
+             rdfs:range :RegulationRule .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#segmentOf
+:segmentOf rdf:type owl:ObjectProperty ;
+           rdfs:domain :PlayerSegment ;
+           rdfs:range :Player .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#sellsAsset
+:sellsAsset rdf:type owl:ObjectProperty ;
+            rdfs:domain :MonetizationMechanic ;
+            rdfs:range :DigitalAsset .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#usesPaymentMethod
+:usesPaymentMethod rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Transaction ;
+                   rdfs:range :PaymentMethod .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#usesVirtualCurrency
+:usesVirtualCurrency rdf:type owl:ObjectProperty ;
+                     rdfs:domain :MonetizationMechanic ;
+                     rdfs:range :VirtualCurrency .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#ageMinimum
+:ageMinimum rdf:type owl:DatatypeProperty ;
+            rdfs:domain :AgeRating ;
+            rdfs:range xsd:integer .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#endsAt
+:endsAt rdf:type owl:DatatypeProperty ;
+        rdfs:domain :OfferPeriod ;
+        rdfs:range xsd:dateTime .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain owl:Thing ;
+         rdfs:range xsd:string .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#hasRealPrice
+:hasRealPrice rdf:type owl:DatatypeProperty ;
+              rdfs:domain :DigitalAsset ;
+              rdfs:range xsd:decimal .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#hasReleaseDate
+:hasReleaseDate rdf:type owl:DatatypeProperty ;
+                rdfs:domain :VideoGame ;
+                rdfs:range xsd:dateTime .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#hasVirtualPrice
+:hasVirtualPrice rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :DigitalAsset ;
+                 rdfs:range xsd:decimal .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#startsAt
+:startsAt rdf:type owl:DatatypeProperty ;
+          rdfs:domain :OfferPeriod ;
+          rdfs:range xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#AccessItem
+:AccessItem rdf:type owl:Class ;
+            rdfs:subClassOf :DigitalItem .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#AgeRating
+:AgeRating rdf:type owl:Class ;
+           rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#AgeRatingSystem
+:AgeRatingSystem rdf:type owl:Class ;
+                 rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#BattlePass
+:BattlePass rdf:type owl:Class ;
+            rdfs:subClassOf :MonetizationMechanic .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#BundleOffer
+:BundleOffer rdf:type owl:Class ;
+             rdfs:subClassOf :MonetizationMechanic .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#CosmeticItem
+:CosmeticItem rdf:type owl:Class ;
+              rdfs:subClassOf :DigitalItem .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#CosmeticOnlyMechanic
+:CosmeticOnlyMechanic rdf:type owl:Class ;
+                      rdfs:subClassOf :MonetizationModule .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#CurrencyBundle
+:CurrencyBundle rdf:type owl:Class ;
+                rdfs:subClassOf :DigitalAsset .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#DLC
+:DLC rdf:type owl:Class ;
+     rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#DigitalAsset
+:DigitalAsset rdf:type owl:Class ;
+              rdfs:subClassOf :VirtualEconomicAsset .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#DigitalItem
+:DigitalItem rdf:type owl:Class ;
+             rdfs:subClassOf :DigitalAsset .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#DirectPurchase
+:DirectPurchase rdf:type owl:Class ;
+                rdfs:subClassOf :MonetizationMechanic .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#DistributionPlatform
+:DistributionPlatform rdf:type owl:Class ;
+                      rdfs:subClassOf :StoreAndMarket .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#Esports
+:Esports rdf:type owl:Class ;
+         rdfs:subClassOf :Event .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf :TemporalContext .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#ExpansionPack
+:ExpansionPack rdf:type owl:Class ;
+               rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#ExternalStore
+:ExternalStore rdf:type owl:Class ;
+               rdfs:subClassOf :StoreAndMarket .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#Franchise
+:Franchise rdf:type owl:Class ;
+           rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#FunctionalItem
+:FunctionalItem rdf:type owl:Class ;
+                rdfs:subClassOf :DigitalItem .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#GachaMechanic
+:GachaMechanic rdf:type owl:Class ;
+               rdfs:subClassOf :MonetizationMechanic .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#GameEdition
+:GameEdition rdf:type owl:Class ;
+             rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#GameGenre
+:GameGenre rdf:type owl:Class ;
+           rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#GameMode
+:GameMode rdf:type owl:Class ;
+          rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#GameProduct
+:GameProduct rdf:type owl:Class .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#GameRegionVersion
+:GameRegionVersion rdf:type owl:Class ;
+                   rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#GameSeason
+:GameSeason rdf:type owl:Class ;
+            rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#GameStorePage
+:GameStorePage rdf:type owl:Class ;
+               rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#GiftTransaction
+:GiftTransaction rdf:type owl:Class ;
+                 rdfs:subClassOf :UserAndBehavior .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#GuidelineDocument
+:GuidelineDocument rdf:type owl:Class ;
+                   rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#HighRiskMechanic
+:HighRiskMechanic rdf:type owl:Class ;
+                  rdfs:subClassOf :MonetizationModule .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#HighRiskRegion
+:HighRiskRegion rdf:type owl:Class ;
+                rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#IndustryCodeOfConduct
+:IndustryCodeOfConduct rdf:type owl:Class ;
+                       rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#ItemBundle
+:ItemBundle rdf:type owl:Class ;
+            rdfs:subClassOf :DigitalAsset .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#ItemCategory
+:ItemCategory rdf:type owl:Class ;
+              rdfs:subClassOf :VirtualEconomicAsset .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#KPI
+:KPI rdf:type owl:Class ;
+     rdfs:subClassOf :StoreAndMarket .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#LegalCase
+:LegalCase rdf:type owl:Class ;
+           rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#LootBox
+:LootBox rdf:type owl:Class ;
+         rdfs:subClassOf :MonetizationMechanic .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#MechanicRiskProfile
+:MechanicRiskProfile rdf:type owl:Class ;
+                     rdfs:subClassOf :StoreAndMarket .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#MonetizationMechanic
+:MonetizationMechanic rdf:type owl:Class ;
+                      rdfs:subClassOf :MonetizationModule .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#MonetizationModule
+:MonetizationModule rdf:type owl:Class .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#OfferPeriod
+:OfferPeriod rdf:type owl:Class ;
+             rdfs:subClassOf :TemporalContext .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#PayToWinMechanic
+:PayToWinMechanic rdf:type owl:Class ;
+                  rdfs:subClassOf :MonetizationModule .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#PaymentMethod
+:PaymentMethod rdf:type owl:Class ;
+               rdfs:subClassOf :UserAndBehavior .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#Platform
+:Platform rdf:type owl:Class ;
+          rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#Player
+:Player rdf:type owl:Class ;
+        rdfs:subClassOf :UserAndBehavior .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#PlayerAccount
+:PlayerAccount rdf:type owl:Class ;
+               rdfs:subClassOf :UserAndBehavior .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#PlayerProfile
+:PlayerProfile rdf:type owl:Class ;
+               rdfs:subClassOf :UserAndBehavior .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#PlayerRiskProfile
+:PlayerRiskProfile rdf:type owl:Class ;
+                   rdfs:subClassOf :StoreAndMarket .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#PlayerSegment
+:PlayerSegment rdf:type owl:Class ;
+               rdfs:subClassOf :UserAndBehavior .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#PurchaseSession
+:PurchaseSession rdf:type owl:Class ;
+                 rdfs:subClassOf :UserAndBehavior .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#RarityLevel
+:RarityLevel rdf:type owl:Class ;
+             rdfs:subClassOf :VirtualEconomicAsset .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#RefundTransaction
+:RefundTransaction rdf:type owl:Class ;
+                   rdfs:subClassOf :UserAndBehavior .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#RegulationAndRisk
+:RegulationAndRisk rdf:type owl:Class .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#RegulationCategory
+:RegulationCategory rdf:type owl:Class ;
+                    rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#RegulationRule
+:RegulationRule rdf:type owl:Class ;
+                rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#RegulatoryBody
+:RegulatoryBody rdf:type owl:Class ;
+                rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#RegulatoryStatus
+:RegulatoryStatus rdf:type owl:Class ;
+                  rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#RiskIndicator
+:RiskIndicator rdf:type owl:Class ;
+               rdfs:subClassOf :RegulationAndRisk .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#Season
+:Season rdf:type owl:Class ;
+        rdfs:subClassOf :TemporalContext .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#SeasonalEventOffer
+:SeasonalEventOffer rdf:type owl:Class ;
+                    rdfs:subClassOf :MonetizationMechanic .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#SpendingRange
+:SpendingRange rdf:type owl:Class ;
+               rdfs:subClassOf :StoreAndMarket .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#StarterPack
+:StarterPack rdf:type owl:Class ;
+             rdfs:subClassOf :DigitalAsset .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#StoreAndMarket
+:StoreAndMarket rdf:type owl:Class .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#StoreFront
+:StoreFront rdf:type owl:Class ;
+            rdfs:subClassOf :StoreAndMarket .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#SubscriptionModel
+:SubscriptionModel rdf:type owl:Class ;
+                   rdfs:subClassOf :MonetizationMechanic .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#TemporalContext
+:TemporalContext rdf:type owl:Class .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#TimeLimitedOffer
+:TimeLimitedOffer rdf:type owl:Class ;
+                  rdfs:subClassOf :MonetizationMechanic .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#Transaction
+:Transaction rdf:type owl:Class ;
+             rdfs:subClassOf :UserAndBehavior .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#TransactionType
+:TransactionType rdf:type owl:Class ;
+                 rdfs:subClassOf :UserAndBehavior .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#UserAndBehavior
+:UserAndBehavior rdf:type owl:Class .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#VideoGame
+:VideoGame rdf:type owl:Class ;
+           rdfs:subClassOf :GameProduct .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#VirtualCurrency
+:VirtualCurrency rdf:type owl:Class ;
+                 rdfs:subClassOf :DigitalAsset .
+
+
+###  https://github.com/Reduan99/TFG_VideoGame_Economy_Ontology_UOC/Ontology#VirtualEconomicAsset
+:VirtualEconomicAsset rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
